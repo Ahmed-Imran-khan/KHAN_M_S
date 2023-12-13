@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.FONT{font-family: 'DM Serif Display', serif;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+.botton:hover{
+background-color: blue;
+}
