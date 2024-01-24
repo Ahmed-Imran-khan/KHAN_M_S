@@ -40,8 +40,8 @@ function Navbar() {
                 Medicines
               </Link>
             </li>
-            <li className="nav-item disabled">
-              <Link className="nav-link" to="/">
+            <li className="nav-item">
+              <Link className="nav-link text-warning disabled" to="/">
                 Surgicals
               </Link>
             </li>

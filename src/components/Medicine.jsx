@@ -55,15 +55,15 @@ function Medicine() {
           </button>
         </div>
       </div>
-      {/* CARDS */}
-      <div className="w-100 row row-cols-1 row-cols-sm-2 row-cols-md-6">
+        {/* CARDS */}
+        <div className="w-100 row row-cols-1 row-cols-sm-2 row-cols-md-6">
         {/* card1 */}
         <div class="product col card p-0">
           <img
             src="https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol/en_pk/pakistan_product/panadol-regular/408x300-panadol-regular.png?auto=format"
             class="card-img-top"
             alt="..."
-          />
+            />
           <div class="card-body">
             <h5 class="card-title FONT">Panadol tab</h5>
           </div>
@@ -90,17 +90,6 @@ function Medicine() {
               >
                 Add
               </button>
-              {/* <button
-                className="btn btn-danger m-1"
-                onClick={() =>
-                  dispatch({
-                    type: RemoveBookWithHeading,
-                    payload: "Panadol tab", // Use the actual heading name
-                  })
-                }
-              >
-                Remove
-              </button> */}
             </li>
           </ul>
           <div class="card-body">
@@ -719,7 +708,6 @@ function Medicine() {
         </div>
       </div>
       <Pagination />
-
       {/* cart-in the end */}
       <Link
         className="btn position-fixed shadow text-light p-2"

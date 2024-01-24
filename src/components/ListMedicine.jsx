@@ -22,12 +22,12 @@ function ListMedicine() {
         <img src="./bill.png" style={{ width: "140px" }} />
       </div>
       <div className="d-flex justify-content-center">
-        <h4 className="border rounded shadow-lg p-3 bg-danger text-warning">
+        <h4 className="border rounded shadow-lg p-3 bg-dark text-light">
           Total : {totalSum.toFixed(2)}/=
         </h4>
       </div>
       <table>
-        <tbody className="d-flex justify-content-center flex-wrap p-5">
+        <tbody className="d-flex justify-content-center flex-wrap p-5 mb-5">
           {selectedCards && selectedCards.length > 0 ? (
             selectedCards.map((card, index) => (
               <tr key={index}>
@@ -54,7 +54,7 @@ function ListMedicine() {
                         })
                       }
                     >
-                    <img src="./recycle-bin.png" style={{width:"20px"}} />
+                    <img src="./waste_bin.png" style={{width:"20px"}} />
                     </button>
                   </div>
                 </td>
