@@ -2,8 +2,24 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import "../App.css";
+import { useState, useEffect } from "react";
+import Loader from "./Loader";
 
 function First() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
     <>
       <Navbar />

@@ -2,10 +2,10 @@ import "./App.css";
 import Contact from "./components/Contact";
 import First from "./components/First";
 import Medicine from "./components/Medicine";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Medicine2 from "./components/Medicine2";
 import Medicine3 from "./components/Medicine3";
 import { Provider } from "react-redux";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import store from "./components/store";
 import ListMedicine from "./components/ListMedicine";
 
@@ -13,7 +13,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <Router>
+        <Router> 
           <Routes>
             <Route path="/" element={<First />} />
             <Route path="/Medicine" element={<Medicine />} />

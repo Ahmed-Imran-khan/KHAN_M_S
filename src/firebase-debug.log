@@ -1,0 +1,33 @@
+[debug] [2025-04-08T16:42:59.191Z] ----------------------------------------------------------------------
+[debug] [2025-04-08T16:42:59.195Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-04-08T16:42:59.196Z] CLI Version:   13.10.2
+[debug] [2025-04-08T16:42:59.197Z] Platform:      win32
+[debug] [2025-04-08T16:42:59.197Z] Node Version:  v18.17.1
+[debug] [2025-04-08T16:42:59.209Z] Time:          Tue Apr 08 2025 21:42:59 GMT+0500 (Pakistan Standard Time)
+[debug] [2025-04-08T16:42:59.210Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-08T16:42:59.392Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-08T16:42:59.393Z] > authorizing via signed-in user (ahmedimrankhaan@gmail.com)
+[debug] [2025-04-08T16:42:59.393Z] [iam] checking project khan-medical-store-4b988 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-08T16:42:59.396Z] > refreshing access token with scopes: []
+[debug] [2025-04-08T16:42:59.400Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-08T16:42:59.401Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-08T16:43:00.028Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-04-08T16:43:00.029Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-08T16:43:00.030Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/khan-medical-store-4b988:testIamPermissions [none]
+[debug] [2025-04-08T16:43:00.030Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/khan-medical-store-4b988:testIamPermissions x-goog-quota-user=projects/khan-medical-store-4b988
+[debug] [2025-04-08T16:43:00.031Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/khan-medical-store-4b988:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-08T16:43:01.569Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/khan-medical-store-4b988:testIamPermissions 401
+[debug] [2025-04-08T16:43:01.570Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/khan-medical-store-4b988:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2025-04-08T16:43:01.571Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-04-08T16:43:01.572Z] > refreshing access token with scopes: []
+[debug] [2025-04-08T16:43:01.573Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-08T16:43:01.574Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-08T16:43:02.061Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-04-08T16:43:02.061Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-08T16:43:02.063Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/khan-medical-store-4b988 [none]
+[debug] [2025-04-08T16:43:02.524Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/khan-medical-store-4b988 401
+[debug] [2025-04-08T16:43:02.524Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/khan-medical-store-4b988 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-04-08T16:43:02.525Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier

@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import { useDispatch, useSelector } from "react-redux";
-import { BuyBook, AddBook } from "./BookType";
-import { AddBookWithHeading, RemoveBookWithHeading } from "./BookType";
 
 function Navbar() {
   const noOfBooks = useSelector((state) => state.NumberOfBook);
